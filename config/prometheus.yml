@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s  # Set the scrape interval to 15 seconds
+
+scrape_configs:
+  - job_name: 'get_temperature'
+    static_configs:
+      - targets: ['temperature_api:5000']
